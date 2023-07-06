@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.containerModal {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 300px;
+  box-sizing: border-box;
+  margin: 30px;
+}
+
+.imgPag {
+  width: 300px;
+  height: 300px;
+  padding: 0px;
+  border: 1px solid #787878;
+  margin-top: 23px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgPag img {
+  width: 300px;
+  height: 300px;
+  background-color: bisque;
+}
+
+.btnModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnModal {
+  margin-top: 20px;
+  background-color: #fe6613;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+  position: relative;
+  right: 0;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.btnModal:hover {
+  background-color: rgb(241, 160, 10);
+  transition: 0.35s;
+}
+
+.imgModal {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .imgModal {
+    width: 100%;
+  }
+
+  .containerModal {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 700px) {
+  .containerModal {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .imgModal {
+    width: 100%;
+  }
+
+  .containerModal {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .imgModal {
+    width: 100%;
+  }
+
+  .containerModal {
+    margin: 0px;
+  }
+
+  .containerModal {
+    margin-bottom: 0px;
+  }
+}

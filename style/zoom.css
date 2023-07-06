@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.containerZoom{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 75px;
+}
+
+.imgZoom {
+    width: 300px;
+    height: 300px;
+    padding: 0px;
+    border: 1px solid #787878;
+    border-radius: 5px;
+    margin-top: 23px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgZoom img{
+    width: 300px;
+    height: 300px;
+    background-color: bisque;
+    animation-name: mudarZoom;
+    animation-duration: 10s;
+}
+
+@keyframes mudarZoom {
+    from {scale: 3;}
+    to{scale: 1;}
+}
+
+

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste</title>
+    <link href="./style/menu.css" rel="stylesheet" type="text/css" />
+    <link href="./style/card.css" rel="stylesheet" type="text/css" />
+    <link href="./style/mascara.css" rel="stylesheet" type="text/css" />
+    <link href="./style/regraDe3.css" rel="stylesheet" type="text/css" />
+    <link href="./style/bodySection.css" rel="stylesheet" type="text/css" />
+    <link href="./style/modal.css" rel="stylesheet" type="text/css" />
+    <link href="./style/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./style/zoom.css" rel="stylesheet" type="text/css" />
+    <link href="./style/canvas.css" rel="stylesheet" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@100;200;300&family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Menú -->
+
+    <header class="containerMenu">
+      <h1 class="h1MenuRetratil">IMÓVEL GUIDE</h1>
+
+      <input type="checkbox" id="bt_menu" />
+      <label for="bt_menu">&#9776;</label>
+
+      <div class="menuRetratil">
+        <ul>
+          <li>Condomínios</li>
+          <li>Fórum</li>
+          <li>Guia</li>
+          <li>Artigos</li>
+          <li>Ferramentas</li>
+        </ul>
+        <ul>
+          <li>Cotar Imóvel</li>
+          <li>Planos</li>
+          <li>Entrar</li>
+        </ul>
+        <button class="btnMenuRetratil">CADASTRE-SE</button>
+      </div>
+
+      <div class="div1Menu">
+        <h1>IMÓVEL GUIDE</h1>
+        <ul>
+          <li>Condomínios</li>
+          <li>Fórum</li>
+          <li>Guia</li>
+          <li>Artigos</li>
+          <li>Ferramentas</li>
+        </ul>
+      </div>
+
+      <div class="div2Menu">
+        <ul>
+          <li>Cotar Imóvel</li>
+          <li>Planos</li>
+          <li>Entrar</li>
+        </ul>
+        <button class="btnMenu">CADASTRE-SE</button>
+      </div>
+    </header>
+
+    <section class="Bodysection">
+      <!-- 1 -->
+
+      <div class="containerPrincipal">
+        <div class="cardd">
+          <div class="corContainerHomemMulher">
+            <img
+              class="imgHomemMulher"
+              src="./assets/mulher.webp"
+              alt="Mulher"
+            />
+            <img
+              class="imgHomemMulherDesfocado"
+              src="./assets/mulher.webp"
+              alt="Mulher"
+            />
+          </div>
+
+          <div class="conteudo">
+            <div>
+              <h1>Nome Corretora</h1>
+              <p>3.000 pontos</p>
+              <p class="sublinhar" onclick="mostrarNumeroMulher()">
+                Ver telefone
+              </p>
+              <p class="numero1">(99) 99999-9999</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardd">
+          <div class="corContainerHomemMulher">
+            <img class="imgHomem" src="./assets/homem.jpeg" alt="Homem" />
+            <img
+              class="imgHomemMulherDesfocado"
+              src="./assets/homem.jpeg"
+              alt="Homem"
+            />
+          </div>
+
+          <div class="conteudo">
+            <div>
+              <h1>Nome Corretora</h1>
+              <p>1.260 pontos</p>
+              <p class="sublinhar" onclick="mostrarNumeroHomem()">
+                Ver telefone
+              </p>
+              <p class="numero2">(99) 99999-9999</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+      <!-- 2 -->
+
+      <div class="containerMascara">
+        <h1>Mande uma mensagem:</h1>
+
+        <div>
+          <input
+            class="cpf"
+            placeholder="Digite seu CPF"
+            type="text"
+            maxlength="14"
+          />
+          <input
+            class="telefone"
+            placeholder="Digite seu telefone"
+            type="text"
+            maxlength="14"
+          />
+          <textarea name="mensagem" maxlength="300"></textarea>
+          <button class="btnMascara">Enviar mensagem</button>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+      <!-- 3 -->
+
+      <div class="containerRegraGeral">
+        <h1 class="regraDe3H1">Regra de 3</h1>
+        <p>Diretamente proporcional</p>
+        <div class="containerRegra">
+          <div>
+            <input
+              class="setaInputRegraDe3 input1"
+              type="number"
+              maxlength="10"
+            />
+            <img class="linhaRegra" src="./assets/linha.png" alt="linha" />
+            <input
+              class="setaInputRegraDe3 input2"
+              type="number"
+              maxlength="10"
+            />
+          </div>
+          <div>
+            <input
+              class="setaInputRegraDe3 input3"
+              type="number"
+              maxlength="10"
+            />
+            <img class="linhaRegra" src="./assets/linha.png" alt="linha" />
+            <input
+              class="setaInputRegraDe3 input4"
+              type="number"
+              maxlength="10"
+            />
+          </div>
+        </div>
+        <button class="btnRegraDe3" onclick="calcular()">Calcular</button>
+      </div>
+
+      <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+      <!-- 4 -->
+
+      <div class="containerModal">
+        <div class="imgPag">
+          <img src="./assets/casa.jpg" alt="casa" />
+        </div>
+
+        <button
+          class="border-0 btnModal"
+          data-toggle="modal"
+          data-target="#meuModal"
+        >
+          Abrir imagem no modal
+        </button>
+
+        <div class="modal fade" id="meuModal">
+          <div
+            class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="larguraModal modal-body">
+                <img class="imgModal" src="./assets/casa.jpg" alt="casa" />
+              </div>
+
+              <div class="modal-footer justify-content-between">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+      <!-- 5 -->
+
+      <div class="containerCanvas">
+        <div id="photo">
+          <img src="./assets/casa.jpg" width="300" height="300" />
+          <div class="canvasQuadradoLaranja">Imovel Guide</div>
+        </div>
+        <button class="btnCanvas" onclick="screenshot()">Download</button>
+      </div>
+
+      <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+      <!-- 6 -->
+
+      <div class="containerZoom">
+        <div class="imgZoom">
+          <img src="./assets/casa.jpg" alt="casa" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="divFooter">
+        <div class="footerDiv1">
+          <li>Termos</li>
+          <li>Contatos</li>
+          <li>Sobre</li>
+        </div>
+
+        <div class="footerDiv2">
+          <li>© Copyright 2022. Todos os direitos reservados.</li>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Arquivos JS -->
+    <script src="./script/card.js"></script>
+    <script src="./script/mascara.js"></script>
+    <script src="./script/regraDe3.js"></script>
+    <script src="./script/canvas.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

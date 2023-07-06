@@ -1,0 +1,62 @@
+
+.containerCanvas{
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 35px;
+}
+
+#photo{
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+}
+
+#photo img{
+    border-radius: 5px;
+}
+
+.canvasQuadradoLaranja{
+    position: absolute;
+    bottom: 10%;
+    right: 9%;
+    border:1px solid #fe65131e;
+    border-radius: 5px;
+    background-color: #fe6513e6;
+    color: white;
+    width: 250px;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+}
+
+.btnCanvas{
+    margin-top: 15px;
+    width: 200px;
+    padding: 5px 20px 5px 20px;
+    background-color: #fe6513e6;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    transition: 0.35s;
+    
+}
+
+.btnCanvas:hover{
+    background-color: rgb(241, 160, 10);;
+    transition: 0.35s;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .containerCanvas{
+        text-align: center;
+        margin-top: 25px;
+        margin-right: 0px;
+    }
+
+
+
+
+
+}

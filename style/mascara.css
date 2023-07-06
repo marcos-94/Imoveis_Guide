@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.containerMascara {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #787878;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.containerMascara h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #1b2653;
+}
+
+.containerMascara div {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerMascara div input {
+  margin-bottom: 10px;
+  height: 30px;
+  font-size: 20px;
+  outline: 0;
+}
+
+.containerMascara div textarea {
+  height: 90px;
+  font-size: 15px;
+  outline: 0;
+}
+
+.btnMascara {
+  margin-top: 20px;
+  background-color: #fe6613;
+  width: 150px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.btnMascara:hover {
+  background-color: rgb(241, 160, 10);
+  transition: 0.35s;
+}
+
+@media (max-width: 400px) {
+  .containerMascara {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 290px) {
+  .containerMascara {
+    margin-left: 0px;
+  }
+}

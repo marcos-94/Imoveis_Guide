@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* .containerMenu{
+    background-color: #1B2653;
+    color: white;
+    padding: 15px 5px 15px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: absolute;
+    z-index: 4;
+    
+    
+} */
+
+/* Div1manu */
+
+.div1Menu {
+  display: flex;
+}
+
+.div1Menu h1 {
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.div1Menu ul {
+  display: flex;
+  /* align-items: center; */
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.div1Menu li {
+  display: flex;
+  /* align-items: center; */
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.div1Menu li:hover {
+  color: #ced4f0;
+  transition: 0.35s;
+}
+
+/* Div2menu */
+
+.div2Menu {
+  display: flex;
+}
+
+.div2Menu ul {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.div2Menu li {
+  display: flex;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.div2Menu li:hover {
+  color: #ced4f0;
+  transition: 0.35s;
+}
+
+.btnMenu {
+  padding: 7px 20px 7px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: #1b2653;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.35s;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.btnMenu:hover {
+  padding: 7px 20px 7px 20px;
+  border: 2px solid #ced4f0;
+  border-radius: 20px;
+  background-color: #212f66;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+/* Menu Retrátil */
+
+.h1MenuRetratil {
+  display: none;
+}
+
+.menuRetratil {
+  display: none;
+}
+
+#bt_menu {
+  display: none;
+}
+
+label[for="bt_menu"] {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .containerMenu {
+    background-color: #1b2653;
+    color: white;
+    /* padding: 15px 5px 15px 5px; */
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    z-index: 0;
+  }
+
+  .h1MenuRetratil {
+    display: block;
+    margin-left: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  label {
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+  }
+
+  label[for="bt_menu"] {
+    display: block;
+    padding: 5px;
+    color: white;
+    font-family: arial;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: 0.35s;
+  }
+
+  label[for="bt_menu"]:hover {
+    color: #ced4f0;
+    transition: 0.35s;
+  }
+
+  #bt_menu:checked ~ .menuRetratil {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 210px;
+    height: 550px;
+    background-color: #212f66;
+  }
+
+  .div1Menu {
+    display: none;
+  }
+
+  .div2Menu {
+    display: none;
+  }
+
+  .menuRetratil ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .menuRetratil ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #212f66;
+    transition: 0.35s;
+  }
+
+  .menuRetratil ul li:hover {
+    color: #212f66;
+    background-color: white;
+    transition: 0.35s;
+  }
+
+  .btnMenuRetratil {
+    padding: 7px 20px 7px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #212f66;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    /* margin-left: 10px; */
+    transition: 0.35s;
+    width: 100%;
+    height: 50px;
+  }
+
+  .btnMenuRetratil:hover {
+    padding: 7px 20px 7px 20px;
+    border: 2px solid #bcc4eb;
+    border-radius: 20px;
+    background-color: white;
+    color: #212f66;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.35s;
+  }
+}
+
+@media (max-width: 600px) {
+  #bt_menu:checked ~ .menuRetratil {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 100%;
+    height: 550px;
+    background-color: #212f66;
+  }
+}
